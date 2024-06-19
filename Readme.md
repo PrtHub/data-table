@@ -15,5 +15,20 @@ One of the challenges was ensuring the table remains readable on very small scre
 - HTML: The main structure includes a table element with rows and cells containing user data.
 - CSS: Styles are applied for visual enhancement, including background colors, padding, and responsive design.
 
+## How to Start the Project Locally and Run It
+
+- Download or Clone the Project:
+
+    - Download the project files as a ZIP archive and extract them to a local directory.
+      OR
+    - Clone the project repository using Git: <br>
+    ```
+    git clone https://github.com/PrtHub/data-table
+    ```
+- Open the Project:
+
+   - Navigate to the project directory.
+   - Install `Live Server` Extension and click on the "Open with Live Server" button
+
 ## Conclusion
 The solution effectively displays user information in a responsive table format, meeting the requirements of the project.
