@@ -1,0 +1,75 @@
+html {background: #191c20}
+
+body {
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper{
+  width: min(900px, 100% - 1rem);
+  margin-inline: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #121519;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+caption, th{
+    text-align: left;
+}
+
+th, td, caption {
+    padding: 1rem;
+}
+
+caption {
+    background: hsl(0 0% 0%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+th {
+    background: hsl(0 0% 0% / 0.5);
+}
+
+tr:nth-of-type(2n) {
+    background: hsl(0 0% 0% / 0.1);
+}
+
+/* .table-wrapper{
+    max-width: 100%;
+    overflow-x: auto;
+} */
+
+@media (max-width: 767px) {
+    th {
+        display: none;
+    }
+
+    td{
+        display: grid;
+        grid-template-columns: 15ch auto;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    td:first-child{
+        padding-top: 2rem;
+    }
+
+    td:last-child{
+        padding-bottom: 2rem;
+    }
+
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
